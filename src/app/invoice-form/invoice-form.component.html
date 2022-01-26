@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-12">
+        <form [formGroup]="invoiceForm" (submit)="onInvoiceSave()">
+            <div class="mb-3">
+              <label for="amount" class="form-label">Amount</label>
+              <input type="number" class="form-control" formControlName="amount" id="amount" >
+            </div>
+            <div class="mb-3">
+                <label for="amount" class="form-label">Vat Amount</label>
+                <input type="number" class="form-control" formControlName="vatAmount" id="vatAmount" >
+            </div>
+            <button type="submit" class="btn btn-primary btm-sm">Submit</button>
+          </form>
+    </div>
+</div>
